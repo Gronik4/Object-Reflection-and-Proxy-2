@@ -23,13 +23,6 @@ const character = {
 const nameAttack = ['Двойной выстрел', 'Нокаутирующий удар'];
 const expected1 = [{ id: 8 }, { name: 'Двойной выстрел' }, { icon: 'http://...' }, { description: 'Двойной выстрел наносит двойной урон' }];
 const expected2 = [{ id: 9 }, { name: 'Нокаутирующий удар' }, { icon: 'http://...' }, { description: 'Описание пока еще недоступно' }];
-const expected3 = [{ id: 8, name: 'Двойной выстрел', icon: 'http://...', description: 'Двойной выстрел наносит двойной урон' }, 
-{ id: 9, name: 'Нокаутирующий удар', icon: 'http://...' }];
-
-test('Test special', () =>{
-  const result = character.special;
-  expect(result).toEqual(expected3);
-})
 
 test('Test versionAttack(Double)', () => {
   const result = versionAttack(character, nameAttack[0])[1];

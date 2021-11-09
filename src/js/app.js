@@ -1,5 +1,5 @@
 export default function versionAttack(character, nameA) {
-  let {special = []} = character;
+  let { special } = character;
   const res = special.find((item) => item.name === nameA);
   if (!('description' in res)) { res.description = 'Описание пока еще недоступно'; }
   const result = [];
